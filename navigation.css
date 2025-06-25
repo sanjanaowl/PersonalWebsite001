@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Doto:wght@100..900');
+
+:root {
+    --text-color: black;
+    --text-white: white;
+    --nav-color:blanchedalmond;
+    --background-color: #dddddd;
+    --text-weight: 800;
+    --title-weight: 900;
+}
+* {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--text-weight);
+    font-style: normal;
+    font-variation-settings: "ROND" 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.dot_bg {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.034);
+    background-image: radial-gradient(black 1px, transparent 1px);
+    background-size: 15px 15px;
+    z-index: 10;
+    
+    
+}
+nav {
+    position: relative;
+    display: flex;
+    background-color: var(--nav-color);
+    width: 100vw;
+    height: 60px;
+    z-index: 11;
+    
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+li {
+    height: 100%;
+    
+}
+a {
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.items {
+    margin: 0 10px;
+    color: var(--text-color);
+    height: 100%;
+
+    
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.items > a:hover {
+    color: var(--text-white);
+    background-color: black;
+}
+
+
+.intro {
+    position: relative;
+    z-index: 11;
+    margin: auto;
+    margin-top: 10px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 7px;
+    border: dotted 1px;
+
+}
+
+.intro__write {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.intro__img img{
+    width: 20vw;
+}
+.intro__map {
+    width: 30vw;
+    justify-content: center;
+}
+.intro__map img{
+    width: 100%;
+    height: 100%;
+    margin-left: 10vw;
+    animation: spin 2s linear infinite;
+    
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.intro__hello {
+    font-size: 10vh;
+    text-align: left;
+}
+.intro__p {
+    font-size: 2vh;
+    text-align: left;
+}
+
+.selector__op {
+    border: dotted 3px rgb(198, 114, 5);
+    width: 20vw;
+    height: 30vh;
+    border-radius: 15%;
+    box-shadow: 5px 5px rgb(198, 114, 5);
+    background-color: var(--nav-color);
+    z-index: 11;
+
+}
+
+.selector {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact {
+    
+    display: flex;
+    flex-direction: row;
+    background-color: var(--nav-color);
+    height: 10vh;
+    width: 96vw;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    border: dotted 3px rgb(198, 114, 5);
+    z-index: 11;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(198, 114, 5);
+    
+    
+}
+
+.contact__icon {
+    height: 100%;
+    display: flex;
+}
+.contact__icon > a >img {
+    fill: black;
+    height: 50%;
+    margin: auto;
+}
+
+.contact__icon > a >img:hover {
+    fill: blue;
+}
+
+.paragraph {
+    position: relative;
+    width: 96vw;
+    height: 10vh;
+    background-color: var(--nav-color);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: dotted 3px rgb(198, 114, 5);
+    box-shadow: 5px 5px rgb(198, 114, 5);
+    border-radius: 15px;
+    z-index: 11;
+}
+
+.paragraph > p {
+    justify-content: center;
+    margin: 10px 5px 10px 5px;
+}
